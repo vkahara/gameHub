@@ -61,6 +61,7 @@ class ristinolla{
                 System.out.println("Mille sarakkeelle haluat asettaa merkin: 0, 1 vai 2");
                 sarake = Lukija.nextInt();
 
+                //Tarkistetaan pystyykö pelaajan antamalle paikalle asettaa merkkiä
                 if(rivi < 0 ||sarake < 0 || rivi > 2 || sarake > 2 ) {
                     System.out.println("Rivi ja/tai sarake ovat kentän ulkopuolella.");
                 }
@@ -73,7 +74,7 @@ class ristinolla{
             }
 
             Taulu[rivi][sarake] = Symbooli;
-
+                //Vuoron jälkeen tarkistetaan löytyykö voittajaa
             if(onVoittanut(Taulu) == 'x') {
 				System.out.println(p1 + " voitti!");
 				peliLoppu = true;
@@ -113,19 +114,22 @@ class ristinolla{
         
 
     }
-
+        //Ohjelma tarkistaa onko joku voittanut jokaisen vuoron jälkeen
     public static char onVoittanut(char[][] Taulu){
 
+        //Tarkistetaan että jokaisella rivillä on sama merkki ja että se merkki ei ole viiva
         for(int i = 0; i < 3; i++){
             if(Taulu[i][0] == Taulu[i][1] && Taulu[i][1] == Taulu[i][2] && Taulu[i][0] != '-'){
                 return Taulu[i][0];
             }
         }
+        //Tehdään samoin sarakkeiden kanssa
         for(int j = 0; j < 3; j++){
             if(Taulu[0][j] == Taulu[1][j] && Taulu[1][j] == Taulu[2][j] && Taulu[0][j] != '-'){
                 return Taulu[0][j];
             }
         }
+        //Sitten vielä viistot
         if(Taulu[0][0] == Taulu[1][1] && Taulu[1][1] == Taulu[2][2] && Taulu[0][0] != '-') {
 			return Taulu[0][0];
 		}
@@ -134,6 +138,7 @@ class ristinolla{
 		}
         return '-';
     }
+    //Tarkistetaan tasapelin mahdollisuus. Ohjelma tarkistaa onko jokainen laudan merkki käytetty ja jos on palautetaan true
     
     public static boolean Tasapeli(char[][] Taulu){
         for(int i = 0; i < 3; i++){
