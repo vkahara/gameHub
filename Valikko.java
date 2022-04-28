@@ -103,22 +103,7 @@ class Valikko{
 			}
         }
     } else if (Valinta == 2){
-
-
-/**
- * 
- * @author Kristian K.
- */
-
-public class JAVAHARJOITUS22 {
-	/**
-	 * Tämän ohjelma on yksinkertainen
-	 * komentorivi-blackjack, päämetodi.
-	 */
-	
-	public static void main (String[] args) {
-
-	/** 
+/** 
 	 * Korttipakan kortit array-elementtinä ja aloitusrahamäärä (int-arvo).
 	*/
 
@@ -287,8 +272,8 @@ public class JAVAHARJOITUS22 {
 	System.out.println("Hävisit kaikki rahasi.");
 	syote.close();
 	syote2.close();
-}
-}
+
+
 
 
     } else if (Valinta == 3){
