@@ -10,8 +10,8 @@ class Valikko{
 
         System.out.println("Mitä peliä haluat pelata? 1 = Ristinolla, 2 = Blackjack, 3 = KPS");
 
-        int valinta = Lukija2.nextInt();
-        if(valinta == 1){
+        int Valinta = Lukija2.nextInt();
+        if(Valinta == 1){
     
             //Luo 3x3 arrayn eli "pelilaudan"
         char[][] Taulu = new char[3][3];
@@ -102,6 +102,10 @@ class Valikko{
 
 			}
         }
+    } else if (Valinta == 2){
+
+    } else if (Valinta == 3){
+        
     } 
 
        
