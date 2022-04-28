@@ -138,7 +138,7 @@ class ristinolla{
 		}
         return '-';
     }
-    //Tarkistetaan tasapelin mahdollisuus. Ohjelma tarkistaa onko jokainen laudan merkki käytetty ja jos on palautetaan true
+    //Tarkistetaan tasapelin mahdollisuus. Ohjelma tarkistaa onko jokainen laudan merkki käytetty eikä v ja jos on palautetaan true
     
     public static boolean Tasapeli(char[][] Taulu){
         for(int i = 0; i < 3; i++){
