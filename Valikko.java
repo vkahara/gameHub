@@ -320,15 +320,15 @@ class Valikko {
 
 		if (rngNumero == 0) {
 
-			rngSyote = kiviPaperiSakset.kivi;
+			rngSyote = Valikko.kivi;
 
 		} else if (rngNumero == 1) {
 
-			rngSyote = kiviPaperiSakset.paperi;
+			rngSyote = Valikko.paperi;
 
 		} else if (rngNumero == 2) {
 
-			rngSyote = kiviPaperiSakset.sakset;
+			rngSyote = Valikko.sakset;
 		}
 
 		System.out.println("Vastustaja: " + rngSyote);
